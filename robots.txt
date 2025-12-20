@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Autoriser l'exploration des ressources nécessaires au rendu
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Empêcher l’indexation de fichiers techniques inutiles
+Disallow: /README.md
+Disallow: /LICENSE
+
+# Sitemap
+Sitemap: https://baptistedev-web.github.io/portfolio/sitemap.xml
