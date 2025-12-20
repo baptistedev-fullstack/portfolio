@@ -1,0 +1,105 @@
+####################################
+# OS – macOS
+####################################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+####################################
+# OS – Windows
+####################################
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+####################################
+# OS – Linux
+####################################
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+####################################
+# Editors / IDEs
+####################################
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+####################################
+# Logs & temp files
+####################################
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.cache
+
+####################################
+# Dependencies
+####################################
+node_modules/
+vendor/
+bower_components/
+
+####################################
+# Build / dist
+####################################
+dist/
+build/
+out/
+target/
+bin/
+obj/
+
+####################################
+# Environment / secrets
+####################################
+.env
+.env.*
+*.local
+*.key
+*.pem
+*.crt
+*.p12
+
+####################################
+# Archives
+####################################
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+####################################
+# System / tooling
+####################################
+coverage/
+.cache/
+.eslintcache
+.npm-debug.log*
+.yarn-debug.log*
+.yarn-error.log*
+
+####################################
+# Tests
+####################################
+*.spec.log
+test-results/

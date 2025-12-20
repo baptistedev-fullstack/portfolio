@@ -63,6 +63,10 @@ Le projet est structuré de manière modulaire afin de faciliter la maintenance,
 │ └── layout.html
 │
 ├── README.md
+├── .gitignore
+├── robots.txt
+├── sitemap.xml
+│
 └── LICENSE
 
 ---
