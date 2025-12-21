@@ -21,3 +21,8 @@ Importation des fichiers de sections
 @import url(./sections/technical.css);
 @import url(./sections/projects.css);
 @import url(./sections/contact.css);
+
+.gtm-iframe {
+    display: none;
+    visibility: hidden;
+}

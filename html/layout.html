@@ -11,15 +11,18 @@
         </div>
         <div class="nav-wrapper">
             <ul class="nav-links" id="nav-menu">
-                <li><a href="#" data-link="presentation">Présentation</a></li>
-                <li><a href="#" data-link="technical">Compétences</a></li>
-                <li><a href="#" data-link="projects">Projets</a></li>
-                <li><a href="#" data-link="contact">Contact</a></li>
+                <li><a href="#" data-link="presentation" data-i18n="nav.presentation"></a></li>
+                <li><a href="#" data-link="technical" data-i18n="nav.technical"></a></li>
+                <li><a href="#" data-link="projects" data-i18n="nav.projects"></a></li>
+                <li><a href="#" data-link="contact" data-i18n="nav.contact"></a></li>
             </ul>
         </div>
         <div class="nav-actions">
             <button type="button" id="theme-toggle" aria-label="Changer de thème">
                 <i data-lucide="sun"></i>
+            </button>
+            <button type="button" id="lang-toggle" aria-label="Changer la langue">
+                <i data-lucide="languages"></i>
             </button>
             <button type="button" id="menu-toggle" aria-label="Ouvrir le menu">
                 <i data-lucide="menu"></i>
@@ -31,5 +34,21 @@
 <main id="app"></main>
 
 <footer class="main-footer">
-    <p>&copy; 2024 Baptiste Digonnet - Développeur Web </p>
+    <div class="footer-content">
+        <p data-i18n="footer.copyright"></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/baptiste-digonnet/" target="_blank" rel="noopener" data-i18n-label="social.linkedin">
+                <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com/Baptistedev-web/" target="_blank" rel="noopener" data-i18n-label="social.github">
+                <i data-lucide="github"></i>
+            </a>
+            <a href="https://www.youtube.com/@LeDevGalérien" target="_blank" rel="noopener" data-i18n-label="social.youtube">
+                <i data-lucide="youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@ledevgalerien" target="_blank" rel="noopener" data-i18n-label="social.tiktok">
+                <i data-lucide="music-2"></i>
+            </a>
+        </div>
+    </div>
 </footer>

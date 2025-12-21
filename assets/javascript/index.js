@@ -1,5 +1,6 @@
 import { loadSection } from './core/loader.js';
 import { initTheme } from './core/theme.js';
+import { translatePage, toggleLanguage } from './core/i18n.js';
 
 async function initPortfolio() {
     const root = document.body;
@@ -17,6 +18,9 @@ async function initPortfolio() {
         // Les icônes Lucide et le thème ont besoin que le HTML du layout soit présent
         initTheme(); 
         
+        translatePage(); 
+        setupLanguageToggle();
+
         // 4. Charger la section par défaut
         await loadSection('presentation', 'app');
         
@@ -27,6 +31,15 @@ async function initPortfolio() {
     } catch (error) {
         console.error("Erreur d'initialisation :", error);
         root.innerHTML = `<p style="color:white; padding:2rem;">Erreur critique au chargement : ${error.message}</p>`;
+    }
+}
+
+function setupLanguageToggle() {
+    const langToggle = document.getElementById("lang-toggle");
+    if (langToggle) {
+        langToggle.addEventListener("click", () => {
+            toggleLanguage();
+        });
     }
 }
 

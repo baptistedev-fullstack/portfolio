@@ -28,7 +28,7 @@
     z-index: calc(var(--z-header) + 1);
 }
 
-#theme-toggle, .menu-toggle {
+#theme-toggle, .menu-toggle, #lang-toggle {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     color: var(--text-main);
@@ -43,7 +43,7 @@
     height: 40px;
 }
 
-#theme-toggle:hover, .menu-toggle:hover {
+#theme-toggle:hover, .menu-toggle:hover, #lang-toggle:hover {
     border-color: var(--accent-main);
     color: var(--accent-main);
     background: var(--bg-card); 
@@ -51,6 +51,12 @@
 }
 
 #theme-toggle i, #theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2px;
+}
+
+#lang-toggle i, #lang-toggle svg {
     width: 20px;
     height: 20px;
     stroke-width: 2px;

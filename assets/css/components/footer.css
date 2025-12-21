@@ -27,3 +27,38 @@
         text-align: left;
     }
 }
+
+.social-links {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.social-links a {
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xs);
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+}
+
+.social-links a:hover {
+    color: var(--accent-main);
+    transform: translateY(-3px);
+    border-color: var(--border-color);
+    background: var(--bg-card);
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 768px) {
+    .social-links {
+        margin-top: 0;
+    }
+}
